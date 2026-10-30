@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="210" viewBox="0 0 850 210" role="img" aria-label="infernogood minimal warm banner">
+  <defs>
+    <radialGradient id="warmGlow" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#141413" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#E5C07B"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      <![CDATA[
+      @keyframes linePulse { 0%,100% { opacity: 0.45; } 50% { opacity: 0.9; } }
+      @keyframes statusBlink { 0%,49% { opacity: 1; } 50%,100% { opacity: 0.3; } }
+      .line { animation: linePulse 3.6s ease-in-out infinite; }
+      .status { animation: statusBlink 1.6s steps(1) infinite; }
+      text { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace; }
+      ]]>
+    </style>
+  </defs>
+
+  <!-- base -->
+  <rect width="850" height="210" fill="#141413"/>
+  <rect width="850" height="210" fill="url(#warmGlow)"/>
+
+  <!-- chamfered frame (light) -->
+  <path d="M 24 12 L 826 12 L 838 24 L 838 186 L 826 198 L 24 198 L 12 186 L 12 24 Z"
+        fill="none" stroke="#2D2A24" stroke-width="1"/>
+  <!-- gold corner accents -->
+  <g stroke="#E5C07B" stroke-width="1.4" fill="none" opacity="0.85">
+    <path d="M 12 24 L 12 12 L 24 12"/>
+    <path d="M 826 12 L 838 12 L 838 24"/>
+    <path d="M 838 186 L 838 198 L 826 198"/>
+    <path d="M 24 198 L 12 198 L 12 186"/>
+  </g>
+
+  <!-- main name -->
+  <text x="425" y="104" font-size="34" font-weight="700" fill="#E5C07B" text-anchor="middle" letter-spacing="4" filter="url(#softGlow)" opacity="0.2">ARSENIY DEYS // INFERNOGOOD</text>
+  <text x="425" y="104" font-size="34" font-weight="700" fill="#E6E1DC" text-anchor="middle" letter-spacing="4">
+    <tspan>ARSENIY DEYS </tspan><tspan fill="#E5C07B" opacity="0.95">//</tspan><tspan> INFERNOGOOD</tspan>
+  </text>
+
+  <!-- divider -->
+  <line x1="260" y1="122" x2="590" y2="122" stroke="url(#goldLine)" stroke-width="1" class="line"/>
+
+  <!-- subtitle -->
+  <text x="425" y="150" font-size="13" fill="#E5C07B" text-anchor="middle" letter-spacing="1.4" opacity="0.9">C++20 &amp; Python Engineer  •  Systems &amp; AI Architecture  •  OmSTU</text>
+
+  <!-- bottom status -->
+  <g>
+    <circle cx="34" cy="184" r="3.5" fill="#3FB950" class="status"/>
+    <text x="44" y="188" font-size="9.5" fill="#8F8A83" letter-spacing="1.8">READY  //  infernogood</text>
+  </g>
+  <text x="816" y="188" font-size="9.5" fill="#8F8A83" text-anchor="end" letter-spacing="1.8">warm-gold / emerald</text>
+</svg>

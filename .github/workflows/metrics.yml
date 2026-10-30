@@ -1,0 +1,26 @@
+name: Update Custom SVG Metrics
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'assets/**'
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate SVG assets
+        run: |
+          for f in assets/*.svg; do
+            echo "Checking $f"
+            python3 -c "import xml.dom.minidom,sys; xml.dom.minidom.parse('$f'); print('OK: $f')"
+          done
