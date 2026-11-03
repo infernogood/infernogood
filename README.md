@@ -2,8 +2,6 @@
 
 ![banner](./assets/banner.svg)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=3000&pause=1000&color=E5C07B&center=true&vCenter=true&width=760&height=45&lines=Systems+%26+Backend+Engineering;C%2B%2B20+%C2%B7+Python+%C2%B7+Linux+%C2%B7+Self-Hosted;Daemons+%C2%B7+Pipelines+%C2%B7+Games)](https://github.com/infernogood)
-
 </div>
 
 ---
@@ -20,36 +18,10 @@ Building autonomous daemons, data pipelines and games. Running everything on my 
 
 ---
 
-## System Info
-
-<div align="center">
-
-<table>
-<tr>
-<td valign="top" width="560">
-
-![terminal](./assets/terminal-card.svg)
-
-</td>
-<td valign="top" width="260">
-
-**Contacts**
+## Contacts
 
 [![GitHub](https://img.shields.io/badge/GitHub-infernogood-141413?style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=0A0A0A&color=161616)](https://github.com/infernogood)
 [![Telegram](https://img.shields.io/badge/Telegram-@arseniy_deys-141413?style=for-the-badge&logo=telegram&logoColor=FFFFFF&labelColor=0A0A0A&color=161616)](https://t.me/arseniy_deys)
-
-**Quick stats**
-
-- **Role:** Software Engineering Student
-- **Focus:** C++20, Python, Linux, Self-Hosted
-- **Env:** Fedora / Ubuntu Server VDS
-- **Editor:** Neovim + tmux
-
-</td>
-</tr>
-</table>
-
-</div>
 
 ---
 
@@ -97,16 +69,6 @@ Desktop application in Python for downloading tracks, albums, and discographies 
 </div>
 
 ---
-
-## Telemetry & Activity
-
-<div align="center">
-
-![stats](https://github-readme-stats.vercel.app/api?username=infernogood&show_icons=true&hide_border=true&bg_color=0D1117&title_color=FFFFFF&text_color=CCCCCC&icon_color=FFFFFF)
-![top-langs](https://github-readme-stats.vercel.app/api/top-langs/?username=infernogood&layout=compact&hide_border=true&bg_color=0D1117&title_color=FFFFFF&text_color=CCCCCC&icon_color=FFFFFF)
-
-</div>
-
 
 ---
 

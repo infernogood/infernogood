@@ -1,74 +1,215 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240" role="img" aria-label="infernogood animated dino banner">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 850 220" role="img" aria-label="infernogood animated dino banner">
   <defs>
     <style>
       <![CDATA[
-      @keyframes run {
-        0%   { transform: translate(40px, 150px) scale(1); }
-        60%  { transform: translate(760px, 150px) scale(1); }
-        75%  { transform: translate(760px, 150px) scale(1.15); }
-        90%  { transform: translate(40px, 150px) scale(1.15); }
-        100% { transform: translate(40px, 150px) scale(1); }
+      text { font-family: 'JetBrains Mono', 'Courier New', monospace; }
+      .frame { fill: #0A0A0A; stroke: #262626; stroke-width: 1; }
+      .corner { stroke: #FFFFFF; stroke-width: 2; fill: none; }
+      .ground { stroke: #333333; stroke-width: 2; stroke-dasharray: 8 8; fill: none; }
+      .letter { font-size: 28; font-weight: 800; fill: #666666; transform-box: fill-box; transform-origin: center; }
+      .dino { fill: #FFFFFF; transform-box: fill-box; transform-origin: center; }
+      .dino-eye { fill: #0A0A0A; }
+      .leg-a, .leg-b { transform-box: fill-box; transform-origin: center; }
+      .left-text, .sep-group, .word-group, .subtitle, .status, .dino, .ground {
+        transform-box: fill-box; transform-origin: center;
       }
-      @keyframes jump {
-        0%,10%,20%,30%,40%,50%,60%,100% { transform: translateY(0); }
-        5%,15%,25%,35%,45%,55% { transform: translateY(-46px); }
+
+      @keyframes dinoRun {
+        0%   { transform: translate(60px, 115px); opacity: 1; }
+        7%   { transform: translate(152px, 90px); opacity: 1; }
+        14%  { transform: translate(245px, 65px); opacity: 1; }
+        18%  { transform: translate(300px, 115px); opacity: 1; }
+        20%  { transform: translate(338px, 90px); opacity: 1; }
+        24%  { transform: translate(374px, 65px); opacity: 1; }
+        28%  { transform: translate(430px, 115px); opacity: 1; }
+        30%  { transform: translate(455px, 90px); opacity: 1; }
+        33%  { transform: translate(490px, 65px); opacity: 1; }
+        37%  { transform: translate(540px, 115px); opacity: 1; }
+        39%  { transform: translate(570px, 90px); opacity: 1; }
+        41%  { transform: translate(595px, 65px); opacity: 1; }
+        45%  { transform: translate(640px, 115px); opacity: 1; }
+        47%  { transform: translate(670px, 90px); opacity: 1; }
+        48%  { transform: translate(695px, 65px); opacity: 1; }
+        52%  { transform: translate(740px, 115px); opacity: 1; }
+        55%  { transform: translate(780px, 115px); opacity: 1; }
+        60%  { transform: translate(880px, 115px); opacity: 0; }
+        100% { transform: translate(880px, 115px); opacity: 0; }
       }
-      @keyframes zoomIn {
-        0%,60% { transform: scale(1); }
-        75%,90% { transform: scale(1.18); }
-        100% { transform: scale(1); }
+
+      @keyframes groundMove {
+        0%   { stroke-dashoffset: 0; opacity: 1; }
+        55%  { stroke-dashoffset: -220; opacity: 1; }
+        60%  { stroke-dashoffset: -220; opacity: 0; }
+        100% { stroke-dashoffset: -220; opacity: 0; }
       }
-      @keyframes fadeName {
-        0%,65% { opacity: 0; }
-        78%,90% { opacity: 1; }
+
+      @keyframes legA {
+        0%   { opacity: 1; }
+        50%  { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      @keyframes legB {
+        0%   { opacity: 0; }
+        50%  { opacity: 1; }
         100% { opacity: 0; }
       }
-      .scene { animation: zoomIn 8s ease-in-out infinite; transform-origin: 450px 120px; }
-      .dino { animation: run 8s linear infinite, jump 8s ease-in-out infinite; }
-      .name { animation: fadeName 8s ease-in-out infinite; font-family: 'JetBrains Mono','Press Start 2P',monospace; }
-      text { font-family: 'JetBrains Mono','Press Start 2P',monospace; }
+
+      @keyframes flashIn {
+        0%, 10%, 18%, 55%, 100% { fill: #666666; transform: translateY(0px); filter: none; }
+        14% { fill: #FFFFFF; transform: translateY(-2px); filter: drop-shadow(0 0 6px rgba(255,255,255,0.6)); }
+        60%, 92% { fill: #FFFFFF; transform: translateY(0px); filter: none; }
+      }
+      @keyframes flashFer {
+        0%, 20%, 28%, 55%, 100% { fill: #666666; transform: translateY(0px); filter: none; }
+        24% { fill: #FFFFFF; transform: translateY(-2px); filter: drop-shadow(0 0 6px rgba(255,255,255,0.6)); }
+        60%, 92% { fill: #FFFFFF; transform: translateY(0px); filter: none; }
+      }
+      @keyframes flashNo {
+        0%, 29%, 37%, 55%, 100% { fill: #666666; transform: translateY(0px); filter: none; }
+        33% { fill: #FFFFFF; transform: translateY(-2px); filter: drop-shadow(0 0 6px rgba(255,255,255,0.6)); }
+        60%, 92% { fill: #FFFFFF; transform: translateY(0px); filter: none; }
+      }
+      @keyframes flashGo {
+        0%, 37%, 45%, 55%, 100% { fill: #666666; transform: translateY(0px); filter: none; }
+        41% { fill: #FFFFFF; transform: translateY(-2px); filter: drop-shadow(0 0 6px rgba(255,255,255,0.6)); }
+        60%, 92% { fill: #FFFFFF; transform: translateY(0px); filter: none; }
+      }
+      @keyframes flashOd {
+        0%, 44%, 52%, 55%, 100% { fill: #666666; transform: translateY(0px); filter: none; }
+        48% { fill: #FFFFFF; transform: translateY(-2px); filter: drop-shadow(0 0 6px rgba(255,255,255,0.6)); }
+        60%, 92% { fill: #FFFFFF; transform: translateY(0px); filter: none; }
+      }
+
+      @keyframes wordZoom {
+        0%, 55% { transform: translate(0px, 0px) scale(1); }
+        60% { transform: translate(120px, -10px) scale(1.1); }
+        70%, 92% { transform: translate(120px, -10px) scale(1.25); }
+        100% { transform: translate(0px, 0px) scale(1); }
+      }
+
+      @keyframes leftTextIn {
+        0%, 55% { opacity: 0; transform: translate(-60px, 0px) scale(0.95); }
+        70%, 92% { opacity: 1; transform: translate(0px, 0px) scale(1); }
+        100% { opacity: 0; transform: translate(-60px, 0px) scale(0.95); }
+      }
+
+      @keyframes sepIn {
+        0%, 55% { opacity: 0; transform: translate(-40px, 0px) skewX(-12deg); }
+        70%, 92% { opacity: 1; transform: translate(0px, 0px) skewX(-12deg); }
+        100% { opacity: 0; transform: translate(-40px, 0px) skewX(-12deg); }
+      }
+
+      @keyframes subtitleIn {
+        0%, 70% { opacity: 0; transform: translateY(6px); }
+        80%, 92% { opacity: 1; transform: translateY(0px); }
+        100% { opacity: 0; transform: translateY(6px); }
+      }
+
+      @keyframes statusIn {
+        0%, 70% { opacity: 0; }
+        80%, 92% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+
+      .dino { animation: dinoRun 10s linear infinite; }
+      .ground { animation: groundMove 10s linear infinite; }
+      .leg-a { animation: legA 0.2s steps(1) infinite; }
+      .leg-b { animation: legB 0.2s steps(1) infinite; }
+      .flash-in { animation: flashIn 10s ease-in-out infinite; }
+      .flash-fer { animation: flashFer 10s ease-in-out infinite; }
+      .flash-no { animation: flashNo 10s ease-in-out infinite; }
+      .flash-go { animation: flashGo 10s ease-in-out infinite; }
+      .flash-od { animation: flashOd 10s ease-in-out infinite; }
+      .word-group { animation: wordZoom 10s ease-in-out infinite; }
+      .left-text { animation: leftTextIn 10s ease-in-out infinite; }
+      .sep-group { animation: sepIn 10s ease-in-out infinite; }
+      .subtitle { animation: subtitleIn 10s ease-in-out infinite; }
+      .status { animation: statusIn 10s ease-in-out infinite; }
       ]]>
     </style>
   </defs>
-  <rect width="900" height="240" fill="#141413"/>
-  <g class="scene">
-    <!-- obstacles letters -->
-    <g fill="#E5C07B" font-size="34" font-weight="700">
-      <text x="120" y="180">I</text>
-      <text x="200" y="180">N</text>
-      <text x="280" y="180">F</text>
-      <text x="360" y="180">E</text>
-      <text x="440" y="180">R</text>
-      <text x="520" y="180">N</text>
-      <text x="600" y="180">O</text>
-      <text x="680" y="180">G</text>
-      <text x="760" y="180">O</text>
-      <text x="840" y="180">O</text>
-      <text x="920" y="180">D</text>
+
+  <!-- background -->
+  <rect class="frame" x="0" y="0" width="850" height="220" rx="4" ry="4"/>
+
+  <!-- chamfered corners -->
+  <path class="corner" d="M10,0 L0,10 M840,0 L850,10 M0,210 L10,220 M840,220 L850,210"/>
+
+  <!-- ground -->
+  <line class="ground" x1="0" y1="155" x2="850" y2="155"/>
+
+  <!-- dino -->
+  <g class="dino">
+    <!-- head -->
+    <rect x="0" y="0" width="12" height="2"/>
+    <rect x="-2" y="2" width="16" height="2"/>
+    <rect x="-4" y="4" width="20" height="2"/>
+    <rect x="-4" y="6" width="22" height="2"/>
+    <rect x="-2" y="8" width="18" height="2"/>
+    <!-- eye cutout -->
+    <rect class="dino-eye" x="10" y="4" width="2" height="2"/>
+    <!-- neck -->
+    <rect x="4" y="10" width="8" height="4"/>
+    <!-- body -->
+    <rect x="-6" y="14" width="20" height="8"/>
+    <!-- tail -->
+    <rect x="-16" y="16" width="10" height="4"/>
+    <rect x="-18" y="18" width="8" height="2"/>
+    <!-- front arm -->
+    <rect x="-4" y="14" width="4" height="6"/>
+    <!-- legs frame A -->
+    <g class="leg-a">
+      <rect x="-2" y="22" width="4" height="8"/>
+      <rect x="8" y="22" width="4" height="6"/>
     </g>
-    <!-- ground -->
-    <rect x="0" y="195" width="900" height="2" fill="#3FB950"/>
-    <!-- dino pixel -->
-    <g class="dino">
-      <rect x="0" y="0" width="8" height="8" fill="#FFFFFF"/>
-      <rect x="8" y="0" width="8" height="8" fill="#FFFFFF"/>
-      <rect x="16" y="0" width="8" height="8" fill="#FFFFFF"/>
-      <rect x="0" y="8" width="8" height="8" fill="#FFFFFF"/>
-      <rect x="8" y="8" width="8" height="8" fill="#141413"/>
-      <rect x="16" y="8" width="8" height="8" fill="#FFFFFF"/>
-      <rect x="24" y="8" width="8" height="8" fill="#FFFFFF"/>
-      <rect x="0" y="16" width="8" height="8" fill="#FFFFFF"/>
-      <rect x="8" y="16" width="8" height="8" fill="#FFFFFF"/>
-      <rect x="16" y="16" width="8" height="8" fill="#FFFFFF"/>
-      <rect x="24" y="16" width="8" height="8" fill="#FFFFFF"/>
-      <rect x="8" y="24" width="8" height="8" fill="#FFFFFF"/>
-      <rect x="24" y="24" width="8" height="8" fill="#FFFFFF"/>
-      <rect x="8" y="32" width="8" height="8" fill="#FFFFFF"/>
-      <rect x="24" y="32" width="8" height="8" fill="#FFFFFF"/>
+    <!-- legs frame B -->
+    <g class="leg-b">
+      <rect x="-4" y="22" width="4" height="6"/>
+      <rect x="10" y="22" width="4" height="8"/>
     </g>
   </g>
-  <!-- final name -->
-  <text class="name" x="60" y="60" font-size="28" fill="#FFFFFF" font-weight="700">ARSENIY DEYS</text>
-  <text class="name" x="330" y="60" font-size="28" fill="#7A7A7A" font-weight="700"> // </text>
-  <text class="name" x="390" y="60" font-size="28" fill="#FFFFFF" font-weight="700">INFERNOGOOD</text>
+
+  <!-- letters -->
+  <g class="word-group">
+    <g class="flash-in">
+      <text class="letter" x="220" y="155">I</text>
+      <text class="letter" x="270" y="155">N</text>
+    </g>
+    <g class="flash-fer">
+      <text class="letter" x="320" y="155">F</text>
+      <text class="letter" x="370" y="155">E</text>
+      <text class="letter" x="420" y="155">R</text>
+    </g>
+    <g class="flash-no">
+      <text class="letter" x="470" y="155">N</text>
+      <text class="letter" x="520" y="155">O</text>
+    </g>
+    <g class="flash-go">
+      <text class="letter" x="570" y="155">G</text>
+      <text class="letter" x="620" y="155">O</text>
+    </g>
+    <g class="flash-od">
+      <text class="letter" x="670" y="155">O</text>
+      <text class="letter" x="720" y="155">D</text>
+    </g>
+  </g>
+
+  <!-- final left text -->
+  <g class="left-text">
+    <text x="40" y="105" font-size="26" font-weight="800" fill="#FFFFFF">ARSENIY DEYS</text>
+  </g>
+
+  <!-- separator -->
+  <g class="sep-group">
+    <text x="215" y="105" font-size="26" font-weight="800" fill="#7A7A7A" font-style="italic">//</text>
+  </g>
+
+  <!-- subtitle -->
+  <text class="subtitle" x="425" y="135" text-anchor="middle" font-size="12" fill="#888888" letter-spacing="2">C++20 &amp; PYTHON ENGINEER • SYSTEMS &amp; AI ARCHITECTURE • OMSTU</text>
+
+  <!-- status indicators -->
+  <g class="status" font-size="11" fill="#888888">
+    <text x="20" y="205">● ONLINE // INFERNOGOOD</text>
+    <text x="690" y="205">MONOCHROME // REV.2</text>
+  </g>
 </svg>
