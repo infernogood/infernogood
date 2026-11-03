@@ -31,7 +31,7 @@ Building autonomous daemons, data pipelines and games. Running everything on my 
 | :--- | :--- |
 | **Core & Build** | <img src="https://skillicons.dev/icons?i=cpp,py,bash,cmake" height="28" align="center" /> &nbsp; |
 | **Frameworks** | <img src="https://skillicons.dev/icons?i=electron,sqlite" height="28" align="center" /> &nbsp; `TDLib` `Telethon` |
-| **Linux & Infra** | <img src="https://skillicons.dev/icons?i=linux,fedora,ubuntu,nginx,cloudflare,git,githubactions" height="28" align="center" /> &nbsp; `VDS` |
+| **Linux & Infra** | <img src="https://skillicons.dev/icons?i=linux,ubuntu,nginx,cloudflare,git,githubactions" height="28" align="center" /> &nbsp; `VDS` |
 
 ---
 
