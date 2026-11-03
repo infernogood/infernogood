@@ -35,8 +35,8 @@ Building autonomous daemons, data pipelines and games. Running everything on my 
 
 **Contacts**
 
-[![GitHub](https://img.shields.io/badge/GitHub-infernogood-141413?style=for-the-badge&logo=github&logoColor=141413&labelColor=E5C07B&color=141413)](https://github.com/infernogood)
-[![Telegram](https://img.shields.io/badge/Telegram-@arseniy_deys-141413?style=for-the-badge&logo=telegram&logoColor=141413&labelColor=E5C07B&color=141413)](https://t.me/arseniy_deys)
+[![GitHub](https://img.shields.io/badge/GitHub-infernogood-141413?style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=0A0A0A&color=161616)](https://github.com/infernogood)
+[![Telegram](https://img.shields.io/badge/Telegram-@arseniy_deys-141413?style=for-the-badge&logo=telegram&logoColor=FFFFFF&labelColor=0A0A0A&color=161616)](https://t.me/arseniy_deys)
 
 **Quick stats**
 
@@ -65,7 +65,7 @@ Building autonomous daemons, data pipelines and games. Running everything on my 
 
 **DevOps & Environment**
 
-[![DevOps](https://skillicons.dev/icons?i=linux,git,docker,nginx,godot&theme=dark)](https://skillicons.dev)
+[![DevOps](https://skillicons.dev/icons?i=linux,git,nginx&theme=dark)](https://skillicons.dev)
 
 ---
 
@@ -77,36 +77,18 @@ Building autonomous daemons, data pipelines and games. Running everything on my 
 <tr>
 <td width="50%" valign="top">
 
-#### ReplicaProject
-Autonomous C++20 AI companion daemon integrated with TDLib, AUI framework, and LLM vision/text pipelines.
-
-`C++20` · `TDLib` · `AUI` · `LLM`
-
-</td>
-<td width="50%" valign="top">
-
 #### content-curator
 OpenAI-compatible AI content manager for Telegram & RSS parsing in Python.
 
 `Python` · `Telethon` · `SQLite` · `LLM API`
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 #### ya-music-downloader
 Desktop application in Python for downloading tracks, albums, and discographies from Yandex Music.
 
 `Python` · `Desktop` · `Yandex Music`
-
-</td>
-<td width="50%" valign="top">
-
-#### pou-godot
-Godot 4 re-implementation in GDScript with data-driven Resource architecture.
-
-`GDScript` · `Godot 4` · `Resources`
 
 </td>
 </tr>
@@ -120,20 +102,11 @@ Godot 4 re-implementation in GDScript with data-driven Resource architecture.
 
 <div align="center">
 
-![stats](https://github-readme-stats.vercel.app/api?username=infernogood&show_icons=true&hide_border=true&bg_color=0D1117&title_color=E5C07B&text_color=E6E1DC&icon_color=3FB950)
-![top-langs](https://github-readme-stats.vercel.app/api/top-langs/?username=infernogood&layout=compact&hide_border=true&bg_color=0D1117&title_color=E5C07B&text_color=E6E1DC&icon_color=3FB950)
+![stats](https://github-readme-stats.vercel.app/api?username=infernogood&show_icons=true&hide_border=true&bg_color=0D1117&title_color=FFFFFF&text_color=CCCCCC&icon_color=FFFFFF)
+![top-langs](https://github-readme-stats.vercel.app/api/top-langs/?username=infernogood&layout=compact&hide_border=true&bg_color=0D1117&title_color=FFFFFF&text_color=CCCCCC&icon_color=FFFFFF)
 
 </div>
 
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/infernogood/infernogood/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/infernogood/infernogood/output/github-contribution-grid-snake.svg" />
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/infernogood/infernogood/output/github-contribution-grid-snake-dark.svg" />
-</picture>
-
-</div>
 
 ---
 
