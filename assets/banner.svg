@@ -13,31 +13,28 @@
       .dino { fill: #FFFFFF; }
 
       @keyframes dinoRun {
-        0%, 9% { transform: translate(120px,100px); opacity: 1; }
-        10.5% { transform: translate(120px,72px); opacity: 1; }
-        11% { transform: translate(120px,45px); opacity: 1; }
-        11.5% { transform: translate(120px,72px); opacity: 1; }
-        12.5%, 23% { transform: translate(120px,100px); opacity: 1; }
-        23.5% { transform: translate(120px,72px); opacity: 1; }
-        24% { transform: translate(120px,45px); opacity: 1; }
-        24.5% { transform: translate(120px,72px); opacity: 1; }
-        25.5%, 36% { transform: translate(120px,100px); opacity: 1; }
-        36.5% { transform: translate(120px,72px); opacity: 1; }
-        37% { transform: translate(120px,45px); opacity: 1; }
-        37.5% { transform: translate(120px,72px); opacity: 1; }
-        38.5%, 49% { transform: translate(120px,100px); opacity: 1; }
-        49.5% { transform: translate(120px,72px); opacity: 1; }
-        50% { transform: translate(120px,45px); opacity: 1; }
-        50.5% { transform: translate(120px,72px); opacity: 1; }
+        0%, 12% { transform: translate(120px,100px); opacity: 1; animation-timing-function: linear; }
+        12.5% { transform: translate(120px,100px); opacity: 1; animation-timing-function: cubic-bezier(0.22,0.61,0.36,1); }
+        14% { transform: translate(120px,70px); opacity: 1; animation-timing-function: cubic-bezier(0.45,0,0.9,0.45); }
+        15.5% { transform: translate(120px,100px); opacity: 1; animation-timing-function: linear; }
+        22.5% { transform: translate(120px,100px); opacity: 1; animation-timing-function: cubic-bezier(0.22,0.61,0.36,1); }
+        24% { transform: translate(120px,70px); opacity: 1; animation-timing-function: cubic-bezier(0.45,0,0.9,0.45); }
+        25.5% { transform: translate(120px,100px); opacity: 1; animation-timing-function: linear; }
+        35.5% { transform: translate(120px,100px); opacity: 1; animation-timing-function: cubic-bezier(0.22,0.61,0.36,1); }
+        37% { transform: translate(120px,70px); opacity: 1; animation-timing-function: cubic-bezier(0.45,0,0.9,0.45); }
+        38.5% { transform: translate(120px,100px); opacity: 1; animation-timing-function: linear; }
+        48.5% { transform: translate(120px,100px); opacity: 1; animation-timing-function: cubic-bezier(0.22,0.61,0.36,1); }
+        50% { transform: translate(120px,70px); opacity: 1; animation-timing-function: cubic-bezier(0.45,0,0.9,0.45); }
+        51.5% { transform: translate(120px,100px); opacity: 1; animation-timing-function: linear; }
         55%, 60% { transform: translate(120px,100px); opacity: 0; }
         100% { transform: translate(120px,100px); opacity: 0; }
       }
 
       @keyframes groundMove {
         0% { stroke-dashoffset: 0; opacity: 1; }
-        55% { stroke-dashoffset: -300; opacity: 1; }
-        60% { stroke-dashoffset: -300; opacity: 0; }
-        100% { stroke-dashoffset: -300; opacity: 0; }
+        55% { stroke-dashoffset: -1200; opacity: 1; }
+        60% { stroke-dashoffset: -1200; opacity: 0; }
+        100% { stroke-dashoffset: -1200; opacity: 0; }
       }
 
       @keyframes legA {
@@ -52,29 +49,29 @@
       }
 
       @keyframes moveIn {
-        0% { transform: translate(860px,0px); opacity: 0; }
-        4% { opacity: 1; }
+        0%, 4% { transform: translate(860px,0px); opacity: 0; }
+        4.01% { opacity: 1; }
         14% { transform: translate(120px,0px); }
         20% { transform: translate(-120px,0px); opacity: 0; }
         100% { transform: translate(-120px,0px); opacity: 0; }
       }
       @keyframes moveFer {
-        0% { transform: translate(860px,0px); opacity: 0; }
-        18% { opacity: 1; }
+        0%, 18% { transform: translate(860px,0px); opacity: 0; }
+        18.01% { opacity: 1; }
         24% { transform: translate(120px,0px); }
         30% { transform: translate(-120px,0px); opacity: 0; }
         100% { transform: translate(-120px,0px); opacity: 0; }
       }
       @keyframes moveNo {
-        0% { transform: translate(860px,0px); opacity: 0; }
-        31% { opacity: 1; }
+        0%, 31% { transform: translate(860px,0px); opacity: 0; }
+        31.01% { opacity: 1; }
         37% { transform: translate(120px,0px); }
         43% { transform: translate(-120px,0px); opacity: 0; }
         100% { transform: translate(-120px,0px); opacity: 0; }
       }
       @keyframes moveGood {
-        0% { transform: translate(860px,0px); opacity: 0; }
-        44% { opacity: 1; }
+        0%, 44% { transform: translate(860px,0px); opacity: 0; }
+        44.01% { opacity: 1; }
         50% { transform: translate(120px,0px); }
         56% { transform: translate(-120px,0px); opacity: 0; }
         100% { transform: translate(-120px,0px); opacity: 0; }
@@ -206,7 +203,7 @@
   </g>
 
   <g class="final-hero">
-    <g transform="translate(-230,-45) scale(0.4)">
+    <g transform="translate(-230,-45) scale(0.4)" fill="#FFFFFF">
 <rect x="25.0" y="0.0" width="20.0" height="2.5"/>
 <rect x="22.5" y="2.5" width="25.0" height="2.5"/>
 <rect x="22.5" y="5.0" width="5.0" height="2.5"/>
