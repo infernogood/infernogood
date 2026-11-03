@@ -25,19 +25,13 @@ Building autonomous daemons, data pipelines and games. Running everything on my 
 
 ---
 
-## Tech Stack
+### Tech Stack
 
-**Core & Systems**
-
-[![Core](https://skillicons.dev/icons?i=cpp,c,python,bash,cmake&theme=dark)](https://skillicons.dev)
-
-**Backend & Data**
-
-[![Backend](https://skillicons.dev/icons?i=sqlite,python&theme=dark)](https://skillicons.dev)
-
-**DevOps & Environment**
-
-[![DevOps](https://skillicons.dev/icons?i=linux,git,nginx&theme=dark)](https://skillicons.dev)
+| Category | Technologies & Tools |
+| :--- | :--- |
+| **Core & Build** | <img src="https://skillicons.dev/icons?i=cpp,py,bash,cmake" height="28" align="center" /> &nbsp; `C++20` `Ninja` `Python 3.10+` |
+| **Frameworks** | <img src="https://skillicons.dev/icons?i=electron,sqlite" height="28" align="center" /> &nbsp; `TDLib` `Telethon` `Multimodal LLM APIs` `feedparser` |
+| **Linux & Infra** | <img src="https://skillicons.dev/icons?i=linux,fedora,ubuntu,nginx,cloudflare,git,githubactions" height="28" align="center" /> &nbsp; `systemd` `VDS / Self-Hosted` `SSH` |
 
 ---
 
